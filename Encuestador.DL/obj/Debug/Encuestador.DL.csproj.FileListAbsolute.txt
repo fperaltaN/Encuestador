@@ -1,0 +1,7 @@
+D:\LocalData\X247556\Documents\Visual Studio 2015\Projects\EncuestadorSA\Encuestador.DL\obj\Debug\Encuestador.DL.csprojResolveAssemblyReference.cache
+D:\LocalData\X247556\Documents\Visual Studio 2015\Projects\EncuestadorSA\Encuestador.DL\bin\Debug\Encuestador.DL.dll
+D:\LocalData\X247556\Documents\Visual Studio 2015\Projects\EncuestadorSA\Encuestador.DL\bin\Debug\Encuestador.DL.pdb
+D:\LocalData\X247556\Documents\Visual Studio 2015\Projects\EncuestadorSA\Encuestador.DL\bin\Debug\Encuestador.Entities.dll
+D:\LocalData\X247556\Documents\Visual Studio 2015\Projects\EncuestadorSA\Encuestador.DL\bin\Debug\Encuestador.Entities.pdb
+D:\LocalData\X247556\Documents\Visual Studio 2015\Projects\EncuestadorSA\Encuestador.DL\obj\Debug\Encuestador.DL.dll
+D:\LocalData\X247556\Documents\Visual Studio 2015\Projects\EncuestadorSA\Encuestador.DL\obj\Debug\Encuestador.DL.pdb
