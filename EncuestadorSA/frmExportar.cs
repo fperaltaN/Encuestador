@@ -18,13 +18,13 @@ namespace Encuestador
         private bool pBajaRealizada = false;
         private DateTime pFechaDesdeSeleccionada;
         private DateTime pFechaHastaSeleccionada;
-        private Login pUsuarioSeleccionado;
-        private List<EncuestaReportar> pListaResultado;
+        private EntUsuarios pUsuarioSeleccionado;
+        private List<EntEncuesta> pListaResultado;
         #endregion
 
         #region Propiedades
         private GestorRespuestas pGestorRespuestas = new GestorRespuestas();
-        private GestorUsuarioEncuestador pGestorUsuarios = new GestorUsuarioEncuestador();
+        private GestorUsuario pGestorUsuarios = new GestorUsuario();
         #endregion
 
         #region Constuctor
@@ -42,7 +42,7 @@ namespace Encuestador
                     pFechaDesdeSeleccionada = dtpDesde.Value;
                     pFechaHastaSeleccionada = dtpHasta.Value;
 
-                    pListaResultado = pGestorRespuestas.ObtenerEncuestasParametros(pFechaDesdeSeleccionada, pFechaHastaSeleccionada, pUsuarioSeleccionado.IdEncuestador);
+                   // pListaResultado = pGestorRespuestas.ObtenerEncuestasParametros(pFechaDesdeSeleccionada, pFechaHastaSeleccionada, pUsuarioSeleccionado.IdEncuestador);
 
                     var cont = pListaResultado.Count;
                     lblResultados.Text = lblResultados.Text.Replace("#n", cont.ToString());
@@ -72,8 +72,8 @@ namespace Encuestador
             try
             {
                 var lista = pGestorUsuarios.ObtenerTodosUsuarios().ToList();
-                lista.Add(new Login() { IdEncuestador = 0, User = "Todos" });
-                var listaOrdenada = lista.OrderBy(x => x.IdEncuestador).ToList();
+               // lista.Add(new Login() { IdEncuestador = 0, User = "Todos" });
+                var listaOrdenada = lista.ToList();
                 cmbDataEncuesta.DataSource = listaOrdenada;
                 cmbDataEncuesta.DisplayMember = "User";
                 cmbDataEncuesta.ValueMember = "IdEncuestador";
@@ -119,7 +119,7 @@ namespace Encuestador
             {
                 foreach (var item in pListaResultado)
                 {
-                    filas += pGestorRespuestas.EliminarEncuesta(item);
+                    //filas += pGestorRespuestas.EliminarEncuesta(item);
                 }
             }
             catch (Exception ex)
@@ -188,7 +188,7 @@ namespace Encuestador
 
         private void cmbUsuarios_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            pUsuarioSeleccionado = (Login)cmbDataEncuesta.SelectedItem;
+            pUsuarioSeleccionado = (EntUsuarios)cmbDataEncuesta.SelectedItem;
         }
 
         private void btnExportarXLS_Click(object sender, EventArgs e)

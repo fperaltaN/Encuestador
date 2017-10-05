@@ -19,3 +19,4 @@ d:\localdata\x247556\documents\visual studio 2015\Projects\EncuestadorSA\Encuest
 d:\localdata\x247556\documents\visual studio 2015\Projects\EncuestadorSA\EncuestadorSA\bin\Debug\Encuestador.Entities.pdb
 d:\localdata\x247556\documents\visual studio 2015\Projects\EncuestadorSA\EncuestadorSA\obj\Debug\EncuestadorSA.frmNuevaEncuesta.resources
 d:\localdata\x247556\documents\visual studio 2015\Projects\EncuestadorSA\EncuestadorSA\obj\Debug\Encuestador.frmControl.resources
+D:\LocalData\X247556\documents\visual studio 2015\Projects\EncuestadorSA\EncuestadorSA\obj\Debug\EncuestadorSA.frmAgregaPregunta.resources

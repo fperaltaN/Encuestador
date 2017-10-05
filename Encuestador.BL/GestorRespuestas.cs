@@ -9,39 +9,39 @@ namespace Encuestador.BL
 {
     public class GestorRespuestas
     {
-        public int RegistrarEncuesta(Respuesta pRespuesta)
-        {
-            try
-            {
-                return Respuestas.RegistrarEncuesta(pRespuesta);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-        public int EliminarEncuesta(EncuestaReportar pRespuesta)
-        {
-            try
-            {
-                return Respuestas.EliminarEncuesta(pRespuesta);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-        public List<EncuestaReportar> ObtenerEncuestasParametros(DateTime pFechaDesde, DateTime pFechaHasta, int pIdUsuario)
-        {
-            try
-            {
-                return Respuestas.ObtenerEncuestasParametros(pFechaDesde, pFechaHasta, pIdUsuario);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        //public int RegistrarEncuesta(EntRespuesta pRespuesta)
+        //{
+        //    try
+        //    {
+        //        return Respuestas.RegistrarEncuesta(pRespuesta);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
+        //public int EliminarEncuesta(EncuestaReportar pRespuesta)
+        //{
+        //    try
+        //    {
+        //        return Respuestas.EliminarEncuesta(pRespuesta);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
+        //public List<EncuestaReportar> ObtenerEncuestasParametros(DateTime pFechaDesde, DateTime pFechaHasta, int pIdUsuario)
+        //{
+        //    try
+        //    {
+        //        return Respuestas.ObtenerEncuestasParametros(pFechaDesde, pFechaHasta, pIdUsuario);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
         public string RegistrarEncuestaXUsuario(int pIdUsuario, string pNombreUsuario, string pAmPm)
         {
             try

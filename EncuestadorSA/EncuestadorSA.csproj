@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAgregaPregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregaPregunta.Designer.cs">
+      <DependentUpon>frmAgregaPregunta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAgregaPregunta.resx">
+      <DependentUpon>frmAgregaPregunta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmControl.resx">
       <DependentUpon>frmControl.cs</DependentUpon>
     </EmbeddedResource>

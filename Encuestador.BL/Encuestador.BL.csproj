@@ -60,13 +60,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GestorCasos.cs" />
-    <Compile Include="GestorDistanciasViajes.cs" />
-    <Compile Include="GestorMotivosViajes.cs" />
+    <Compile Include="GestorAgregaPregunta.cs" />
     <Compile Include="GestorRespuestas.cs" />
-    <Compile Include="GestorSitios.cs" />
-    <Compile Include="GestorUsuarioEncuestador.cs" />
-    <Compile Include="GestorVehiculos.cs" />
+    <Compile Include="GestorUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
