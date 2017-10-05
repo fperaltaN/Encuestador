@@ -61,7 +61,7 @@
             // encuestaToolStripMenuItem
             // 
             this.encuestaToolStripMenuItem.Name = "encuestaToolStripMenuItem";
-            this.encuestaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.encuestaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.encuestaToolStripMenuItem.Text = "Encuesta";
             this.encuestaToolStripMenuItem.Click += new System.EventHandler(this.encuestaToolStripMenuItem_Click);
             // 
@@ -70,8 +70,8 @@
             this.crearToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevaEncuestaToolStripMenuItem});
             this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.crearToolStripMenuItem.Text = "Crear";
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.crearToolStripMenuItem.Text = "Generar";
             // 
             // nuevaEncuestaToolStripMenuItem
             // 

@@ -14,7 +14,7 @@ namespace Encuestador
         #endregion
 
         #region Propiedades
-        public Login UsuarioConectado { get; set; }
+        public EntUsuarios UsuarioConectado { get; set; }
         #endregion
 
         #region Constructor
@@ -37,10 +37,10 @@ namespace Encuestador
 
         public void LoadDatos()
         {
-            this.Text = this.Text + " - " + UsuarioConectado.User;
+            this.Text = this.Text + " - " + UsuarioConectado.Usuario;
             //var ampm=  DateTime.Now.Hour<12 ? "am" : "pm";
             var ampm = DateTime.Now.ToString("tt", CultureInfo.InvariantCulture) == "AM" ? "am" : "pm";
-            var pNroRespuesta = gestorRespuestas.RegistrarEncuestaXUsuario(UsuarioConectado.IdEncuestador, UsuarioConectado.User,ampm).Split('*');
+            var pNroRespuesta = gestorRespuestas.RegistrarEncuestaXUsuario(UsuarioConectado.IdUsuario, UsuarioConectado.Usuario,ampm).Split('*');
             cmbDataEncuesta.Text = pNroRespuesta[0];
             pIdEncuesta = int.Parse(pNroRespuesta[1]);
         }

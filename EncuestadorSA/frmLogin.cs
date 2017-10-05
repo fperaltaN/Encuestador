@@ -16,7 +16,7 @@ namespace Encuestador
     public partial class frmLogin : Form
     {
         #region Variables
-        private GestorUsuarioEncuestador gestorUsuarios = new GestorUsuarioEncuestador();
+        private GestorUsuario gestorUsuarios = new GestorUsuario();
         #endregion
 
         #region Constructor
@@ -47,19 +47,19 @@ namespace Encuestador
         #region Metodos
         private void IniciarSesion()
         {
-            var usuario = new Login();
+            var usuario = new EntUsuarios();
             try
             {
                 if (validarControles())
                 {
-                    usuario.User = txtUsuario.Text.Trim();
-                    usuario.Password = txtPassword.Text.Trim();
-                    //Login oAux = gestorUsuarios.IniciarSesion(usuario);
-                    if (true)//oAux != null)
+                    usuario.Usuario = txtUsuario.Text.Trim();
+                    usuario.Contraseña = txtPassword.Text.Trim();
+                    var oAux = gestorUsuarios.Login(usuario);
+                    if (oAux != null)
                     {
                         frmPrincipal frm = new frmPrincipal();
                         //frm.UsuarioConectado = oAux;
-                        //frm. = true;
+                       // frm.Show = true;
                         this.Close();
                         
                     }

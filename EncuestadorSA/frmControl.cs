@@ -16,18 +16,12 @@ namespace Encuestador
         private int pCantidadTotal;
         private int pCantidadSumar;
 
-        private Respuesta pRespuesta = new Respuesta();
-        private TiempoViaje pDistancia = new TiempoViaje();
-        private MotivoViaje pMotivo = new MotivoViaje();
-
-        private List<Caso> pLstCasosPorId = new List<Caso>();
-
-        private GestorCasos pGestorCasos = new GestorCasos();
+        private EntRespuesta pRespuesta = new EntRespuesta();
         private GestorRespuestas pGestorRespuestas = new GestorRespuestas();
         #endregion
 
         #region Propiedades
-        public Login UsuarioConectado { get; set; }
+        public EntUsuarios UsuarioConectado { get; set; }
         public string NroEncuesta { get; set; }
         public int IdEncuesta { get; set; }
         #endregion
@@ -192,18 +186,7 @@ namespace Encuestador
 
         }
 
-        private void CargarCasos()
-        {
-            try
-            {
-                pLstCasosPorId = new List<Caso>();
-                pLstCasosPorId = pGestorCasos.ObtenerCasosPorIdDistancia(pDistancia.IdTiempoViaje, pRespuesta.IdVehiculo).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        
 
         #endregion
 

@@ -60,16 +60,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Caso.cs" />
-    <Compile Include="EncuestaReportar.cs" />
-    <Compile Include="Login.cs" />
-    <Compile Include="MotivoViaje.cs" />
+    <Compile Include="EntEncuesta.cs" />
+    <Compile Include="EntEncuestaPregunta.cs" />
+    <Compile Include="EntPreguntaTmp.cs" />
+    <Compile Include="EntUsuarios.cs" />
+    <Compile Include="EntPregunta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Respuesta.cs" />
-    <Compile Include="Sentido.cs" />
-    <Compile Include="Sitio.cs" />
-    <Compile Include="TiempoViaje.cs" />
-    <Compile Include="Vehiculo.cs" />
+    <Compile Include="EntRespuesta.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

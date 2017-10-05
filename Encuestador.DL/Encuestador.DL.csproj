@@ -61,15 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Casos.cs" />
-    <Compile Include="TiemposViajes.cs" />
-    <Compile Include="MotivosViajes.cs" />
     <Compile Include="Odbc\OdbcClient.cs" />
     <Compile Include="Respuestas.cs" />
-    <Compile Include="Sitios.cs" />
-    <Compile Include="UsuariosEncuestadores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vehiculos.cs" />
+    <Compile Include="SQLDatos.cs" />
+    <Compile Include="Usuarios.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Encuestador.Entities\Encuestador.Entities.csproj">

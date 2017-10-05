@@ -25,11 +25,11 @@ namespace CapaDatos
         {
             try
             {
-                connString = ConfigurationManager.ConnectionStrings["EnFormaConection"].ToString();
+                connString = ConfigurationManager.ConnectionStrings["SQLEncuestadorSA"].ToString();
             }
             catch (Exception)
             {
-                connString = ConfigurationManager.ConnectionStrings["EnFormaConnectionString"].ToString();
+                connString = ConfigurationManager.ConnectionStrings["EncuestadorSAConnectionString"].ToString();
             }
             
         }
